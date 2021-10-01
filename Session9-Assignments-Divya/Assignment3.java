@@ -41,10 +41,12 @@ public class Assignment3 {
 		System.out.println("Permannet employee");
 		pEmp.getEmployeeID();
 		pEmp.getEmployeeName();
+		pEmp.salaryOnMonthly();
 		
 		System.out.println("Contract employee");
 		cEmp.getEmployeeID();
 		cEmp.getEmployeeName();
+		cEmp.salaryOnHourly();
 		
 	}
 }
