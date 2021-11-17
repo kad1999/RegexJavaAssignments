@@ -1,0 +1,16 @@
+CREATE TABLE PRODUCT(
+id int primary key,
+name varchar(20),
+price int
+);
+
+insert into product values(101, 'Pen', 50);
+insert into product values(102, 'Keyboard', 500);
+insert into product values(103, 'Mouse', 500);
+insert into product values(104, 'Pen Drive', 400);
+insert into product values(105, 'USB', 200);
+
+update product set price = 100 where id = 101;
+update product set name = 'Wireless Mouse' where id=103;
+
+delete from product where id IN (104, 105);

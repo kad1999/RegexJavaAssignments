@@ -1,0 +1,24 @@
+body{
+    background-color: grey;
+    color: black;
+}
+.navBar{
+    background-color: black;
+    padding: 10px;
+}
+h4{
+    color: blue;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: normal;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: large;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}

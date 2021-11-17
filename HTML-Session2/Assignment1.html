@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Account</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend><h2>New Account Details</h2></legend>
+
+        <form action="#">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Mobile:</label><br>
+            <input type="number" id="phone" name="phone" minlength="10" required><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" required>
+            <label for="female">Female</label><br><br>
+            <label for="presentAddress">Present Address:</label><br>
+            <textarea id="presentAddress" name="presentAddress" required></textarea><br>
+            <label for="permanentAddress">Permanent Address:</label><br>
+            <textarea id="permanentAddress" name="permanentAddress" required></textarea><br><br>
+            <label for="panNo">PAN No:</label><br>
+            <input type="number" id="panNo" name="panNo" required><br><br>
+            <label for="addressProof">Address proof:</label>
+            <select name="addressProof" id="addressProof" >
+                <option value="">Aadhar</option>
+                <option value="">PAN Card</option>
+                <option value="">Driving license</option>
+            </select>
+            <br><br>
+            <label for="idProof">ID proof:</label>
+            <select name="idProof" id="idProof">
+                <option value="">Aadhar</option>
+                <option value="">PAN Card</option>
+                <option value="">Driving license</option>
+            </select>
+            <br><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </fieldset>
+    
+</body>
+
+</html>

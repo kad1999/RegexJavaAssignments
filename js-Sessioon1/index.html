@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student details</h1><br>
+    Student id : <p id="studId"></p><br>
+    Student name : <p id="name"></p><br>
+    Mark 1 : <p id="mark1"></p><br>
+    Mark 2 : <p id="mark2"></p><br>
+    Mark 3 : <p id="mark3"></p><br>
+    Mark 4 : <p id="mark4"></p><br>
+    Mark 5 : <p id="mark5"></p><br>
+    Mark 6 : <p id="mark6"></p><br>
+
+    <script>
+        var id = parseInt(prompt("Enter id : "));
+        var name = prompt("Enter name");
+        var mark1 = parseFloat(prompt("Enter mark of subject 1"));
+        var mark2 = parseFloat(prompt("Enter mark of subject 2"));
+        var mark3 = parseFloat(prompt("Enter mark of subject 3"));
+        var mark4 = parseFloat(prompt("Enter mark of subject 4"));
+        var mark5 = parseFloat(prompt("Enter mark of subject 5"));
+        var mark6 = parseFloat(prompt("Enter mark of subject 6"));
+
+        document.getElementById('studId').innerHTML = id;
+        document.getElementById('name').innerHTML = name;
+        document.getElementById('mark1').innerHTML = mark1;
+        document.getElementById('mark2').innerHTML = mark2;
+        document.getElementById('mark3').innerHTML = mark3;
+        document.getElementById('mark4').innerHTML = mark4;
+        document.getElementById('mark5').innerHTML = mark5;
+        document.getElementById('mark6').innerHTML = mark6;
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Salary break-up application</h3>
+    ==================================================<br>
+      Employee Id         : <span id="empId"></span><br>
+      Employee Name         : <span id="name"></span><br>
+      Basic Salary         : <span id="salary"></span><br>
+      HRA         : <span id="hra"></span><br>
+      PF         : <span id="pf"></span><br>
+      TA         : <span id="ta"></span><br>
+      ESI         : <span id="esi"></span><br>
+      Gross Pay         : <span id="gPay"></span><br>
+      Net Pay         : <span id="netPay"></span><br>
+
+    <script>
+        var id = parseInt(prompt("Enter id : "));
+        var name = prompt("Enter name");
+        var basicSal = parseFloat(prompt("Enter salary"));
+
+        var hra = 2*basicSal/100;
+        var pf = 3*basicSal/100;
+        var ta = 1*basicSal/100;
+        var esi = 2.5*basicSal/100;
+        var grossPay = basicSal+hra+pf+esi+ta;
+        var netPay = grossPay - pf;
+
+        document.getElementById('empId').innerHTML = id;
+        document.getElementById('name').innerHTML = name;
+        document.getElementById('salary').innerHTML = basicSal;
+        document.getElementById('hra').innerHTML = hra;
+        document.getElementById('pf').innerHTML = pf;
+        document.getElementById('ta').innerHTML = ta;
+        document.getElementById('esi').innerHTML = esi;
+        document.getElementById('gPay').innerHTML = grossPay;
+        document.getElementById('netPay').innerHTML = netPay;
+
+    </script>
+</body>
+</html>

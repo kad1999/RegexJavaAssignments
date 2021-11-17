@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in CSS</title>
+    <style>
+        h2{
+            text-align: center;
+            font-style: italic;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"]{
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+
+        input[type="submit"]{
+            background-color: blueviolet;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0 50%;
+        }
+  
+    </style>
+</head>
+<body>
+    <h2>User Details Form</h2>
+    <form action="#">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Mobile:</label><br>
+        <input type="number" id="phone" name="phone" minlength="10" required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" required>
+        <label for="female">Female</label><br><br>
+        <label for="skills">Skills:</label>
+        <select name="skills" id="skills" >
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JAVA</option>
+        </select>
+        <br><br>
+        <label for="country">Country:</label>
+            <select name="country" id="country" >
+                <option value="">India</option>
+                <option value="">China</option>
+                <option value="">Pakisthan</option>
+            </select>
+            <br><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
