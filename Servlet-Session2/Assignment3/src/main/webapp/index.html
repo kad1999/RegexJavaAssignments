@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Registration</title>
+
+</head>
+<body>
+	<h2>Employee Registration Form</h2>
+	<form action="register" method="post">
+		<p>
+			<label>Employee ID</label>
+			<input type = "text" name="id">
+		</p>
+		<p>
+			<label>Employee Name</label>
+			<input type = "text" name="name">
+		</p>
+		<p>
+			<label>Gender</label>
+			<input type="radio" name="gender" value="female">Female
+			<input type="radio" name="gender" value="male">Male
+		</p>
+		<p>
+		   <select name="role" id="role" size="2" style="font-size:20px; height:25px;">
+		     
+		      <option value="SWE">SWE</option>
+		      <option value=""></option>
+		      <option value="HR">HR</option>
+		       <option value=""></option>
+		      <option value="QA">QA</option>
+		       <option value=""></option>
+		      <option value="Sales">Sales</option>
+		   </select>
+		</p>
+		<p>
+		   <select name="loc" id="loc" size="2" style="font-size:20px; height:25px;">
+		      <option value="Kochi">Kochi</option>
+		      <option value=""></option>
+		      <option value="Delhi">Delhi</option>
+		      <option value=""></option>
+		      <option value="Mumbai">Mumbai</option>
+		      <option value=""></option>
+		      <option value="Chennai">Chennai</option>
+		   </select>
+		</p>
+		<p>
+			<input type="checkbox" name="passport" value="1">Do you have a passport
+		</p>
+		<p>
+			<input type="submit" value="Register">
+			<input type="reset" value="Reset">
+		</p>
+	</form>
+
+</body>
+</html>
