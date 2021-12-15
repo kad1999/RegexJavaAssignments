@@ -1,0 +1,43 @@
+select * from Employee;
+
+select name, salary from employee;
+
+select * from employee where dno=10;
+
+select * from employee where salary<5000;
+
+select * from employee where salary>5000;
+
+select * from employee where dno!=10;
+
+select * from employee where id in (101, 103, 105);
+
+select * from employee where id not in (101, 103, 105);
+
+select * from employee where id between 101 and 104;
+
+select * from employee where name like 'S%';
+
+select * from employee where name like '_____';
+
+select * from employee where name is NULL;
+
+select * from employee where name is not NULL;
+
+select count(*) as [count of emmployee], sum(salary) as [sum] , avg(salary) as [average], min(salary) as [min], max(salary) as [max] from employee;
+
+select dno, sum(salary) as [sum] from employee group by dno;
+
+select dno,  count(*) as [count] from employee group by dno;
+
+
+select dno,  min(salary) as [min] from employee group by dno;
+
+select dno,  max(salary) as [max] from employee group by dno;
+
+
+select * from employee order by salary;
+
+select * from employee order by salary desc;
+
+select * from employee where dno = (select dno from employee where name='Wills');

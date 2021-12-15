@@ -1,0 +1,21 @@
+create database employeeDB;
+create table Employee
+(
+id int, 
+name varchar(30),
+salary int,
+dno int
+);
+insert into Employee values(101, 'Jones', 5500, 10);
+insert into Employee values(102, 'Smith',4500, 10);
+insert into Employee values(103, 'Wills', 6500, 10);
+insert into Employee values(104, 'John', 5500, 20);
+insert into Employee(ID, salary, dno) values(105, 4200, 30);
+
+select * from Employee;
+
+update Employee set name='Smith123' where name ='Smith';
+
+
+delete from Employee where name is NULL;
+delete from Employee where dno=10;
