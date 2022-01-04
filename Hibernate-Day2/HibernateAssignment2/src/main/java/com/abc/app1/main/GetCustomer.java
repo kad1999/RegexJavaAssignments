@@ -1,0 +1,29 @@
+package com.abc.app1.main;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.abc.app1.model.Customer;
+
+public class GetCustomer {
+public static void main(String[] args) {
+		
+		//1.bootstraping hibernate
+		Configuration cfg = new Configuration();
+		cfg.configure("com/abc/app1/cfgs/hibernate.cfg.xml");
+		
+		SessionFactory factory = cfg.buildSessionFactory();
+		
+		Session session = factory.openSession();
+		Transaction tx = null;
+		
+		int cid = 101;
+		Customer c = session.get(Customer.class, cid);
+		System.out.println(c);
+		
+		session.close();
+		factory.close();
+	} 
+}
